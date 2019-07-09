@@ -471,6 +471,7 @@ ifeq ($(strip $(AUDIO_FEATURE_ENABLED_FFV)), true)
 >>>>>>> LA.UM.7.5.r1-04500-8x96.0
 endif
 
+LOCAL_CFLAGS += -D_GNU_SOURCE
 LOCAL_CFLAGS += -Wall -Werror
 LOCAL_CLANG_CFLAGS += -Wno-unused-variable -Wno-unused-function -Wno-missing-field-initializers
 
